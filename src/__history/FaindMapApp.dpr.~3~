@@ -1,0 +1,20 @@
+program FaindMapApp;
+
+uses
+  Vcl.Forms,
+  UPrincipal in '..\UPrincipal.pas' {Form1},
+  ULocais in '..\ULocais.pas' {frmLocais},
+  UDMConexao in 'UDMConexao.pas' {DataModule1: TDataModule},
+  UDMEntidades in 'Entidades\UDMEntidades.pas' {DataModule2: TDataModule};
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.MainFormOnTaskbar := True;
+  Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TfrmLocais, frmLocais);
+  Application.CreateForm(TDataModule1, DataModule1);
+  Application.CreateForm(TDataModule2, DataModule2);
+  Application.Run;
+end.

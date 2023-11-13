@@ -1,0 +1,19 @@
+object DataModule1: TDataModule1
+  OldCreateOrder = False
+  Height = 285
+  Width = 456
+  object FDConnection1: TFDConnection
+    Params.Strings = (
+      'Database=faindmapdb'
+      'User_Name=sa'
+      'Password=faindmap2023'
+      'Server=localhost'
+      'DriverID=MSSQL')
+    Left = 344
+    Top = 32
+  end
+  object FDPhysMSSQLDriverLink1: TFDPhysMSSQLDriverLink
+    Left = 352
+    Top = 104
+  end
+end
